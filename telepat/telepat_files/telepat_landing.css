@@ -4,7 +4,7 @@ button {
 }
 
 body {
-    background: #000 url(landing_bg.png) no-repeat;
+    background: #000 url(big-telepat.png) no-repeat;
     background-attachment: fixed;
     background-position: 50%;
     background-size: cover;
@@ -211,4 +211,12 @@ body {
 
 @media screen and (orientation: landscape) {
     body {background-position-y: 20%;}
+}
+@media screen and (orientation: portrait) and (max-width: 640px) {
+    body {
+        background: #000 url(landing_bg.png) no-repeat;
+        background-attachment: fixed;
+        background-position: 50%;
+        background-size: cover;
+    }
 }

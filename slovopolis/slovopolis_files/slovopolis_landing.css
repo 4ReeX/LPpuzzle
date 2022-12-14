@@ -1,0 +1,223 @@
+button {
+    background: none;
+    border: none
+}
+
+body {
+    background: #000 url(wordly.jpeg) no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: 12px;
+    height: 100vh
+}
+
+.wrapper, body {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center
+}
+
+.container {
+    height: auto;
+    margin: 0 auto;
+    max-width: 640px;
+    padding: 0;
+    position: relative;
+    width: 100%
+}
+
+.header {
+    align-items: flex-start;
+    height: 50px;
+    width: 100%
+}
+
+.header, .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.logo {
+    border-radius: 0 0 20px 20px;
+    font-size: 34px;
+    padding: 8px 20px;
+    width: auto
+}
+
+.age, .logo {
+    align-items: center;
+    background: #fff;
+    color: #000;
+    font-weight: 700
+}
+
+.age {
+    border-radius: 100%;
+    flex-direction: row;
+    font-size: 18px;
+    height: 40px;
+    justify-content: center;
+    right: 10px;
+    top: 5px;
+    width: 40px
+}
+
+.age, .footer {
+    display: flex;
+    position: fixed
+}
+
+.footer {
+    align-items: center;
+    background: rgba(0, 0, 0, .4);
+    bottom: 0;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: flex-end;
+    left: 0;
+    padding: 5px 0;
+    width: 100%
+}
+
+.footer, .footer a {
+    color: #fefefe;
+    line-height: 1
+}
+
+.footer a {
+    display: inline-flex;
+    text-decoration: underline
+}
+
+.center {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+    justify-content: center;
+    padding: 20px
+}
+
+.slogan {
+    color: #fff;
+    font-size: 2.7vh;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    margin-top: -50px;
+}
+
+.slogan span.yellow {
+    color: #ffc700;
+    font-size: 5.5vh
+}
+
+.slogan span.blue {
+    color: #87f1ff
+}
+.dostupno {
+    font-size: 11px!important;
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    align-items: center;
+    background: #323c57;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    justify-content: center;
+    padding: 6px 15px;
+    position: absolute;
+    z-index: -1;
+    bottom: -60px;
+}
+.btn {
+    align-items: center;
+    background: url(landing_btn.png) no-repeat;
+    background-position-y: center;
+    box-sizing: border-box;
+    display: flex;
+    filter: contrast(1.3) hue-rotate(191deg);
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 96px;
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 300px;
+    padding: 20px 0;
+    width: 80%;
+    background-size: 100% 100%;
+
+}
+
+.btn, .btn .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn .text {
+    color: #f8f6d0;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 0 2px 1px rgb(0 0 0 / 25%);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.btn .price {
+    align-items: center;
+    background: #323c57;
+    border-radius: 5px;
+    bottom: -30px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    justify-content: center;
+    padding: 6px 15px;
+    position: absolute;
+    z-index: -1
+}
+.btn form {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: landscape) {
+    body {background-position-y: 20%;}
+}
+@media screen and (orientation: portrait) and (max-width: 640px) {
+    body {
+        background: #000 url(wordly-mob.jpg) no-repeat;
+        background-attachment: fixed;
+        background-position: 50%;
+        background-size: cover;
+    }
+}
